@@ -44,3 +44,16 @@ function dataEnvioMensagem(string $data)
    }
 
 }
+
+
+function tamanho(string $tamanhoo)
+{
+  
+  return mb_strlen (trim($tamanhoo));
+
+}
+
+function validarEmail(string $email):bool
+{
+  return filter_var($email,FILTER_VALIDATE_EMAIL);
+}
